@@ -1,0 +1,244 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* ========================= */
+/* INDEX PAGE */
+/* ========================= */
+
+.index-page {
+    height: 100vh;
+    background: linear-gradient(135deg, #e89090, #e6b5a8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 50px;
+}
+
+
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* YES Button */
+#yesBtn {
+    background-color: #ff4b5c;
+    color: white;
+}
+
+/* NO Button */
+#noBtn {
+    background-color: #ffffff;
+    color: #ff4b5c;
+}
+
+
+
+
+/* =========================
+/* CUTE MODERN COLLAGE */
+/* ========================= */
+
+/* .collage-page {
+    background: linear-gradient(135deg, #e89090, #e6b5a8);
+    min-height: 100vh;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+/* Heading */
+/* .heading {
+    padding: 70px 20px 15px;
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+} */
+
+/* Quote */
+/* .quote {
+    color: white;
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+    line-height: 1.7;
+    opacity: 0.95;
+} */
+
+/* Clean Modern Grid */
+/* .collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 30px;
+} */
+
+/* Image Card */
+/* .collage img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
+} */
+
+/* Hover Effect */
+/* .collage img:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+} */
+
+
+
+
+
+
+
+/* ========================= */
+/* STRUCTURED MODERN GRID */
+/* ========================= */
+
+.collage-page {
+    background: linear-gradient(135deg, #e89090, #e6b5a8);
+    min-height: 100vh;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.heading {
+    padding: 70px 20px 15px;
+    color: white;
+    font-size: 4rem;
+}
+
+.quote {
+    color: white;
+    font-size: 2rem;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+    line-height: 1.7;
+}
+
+/* GRID STRUCTURE */
+.collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 250px;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+/* Image Base Style */
+.collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+}
+
+/* Layout Positions */
+
+/* Top Left Big */
+.img1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+/* Right Tall */
+.img2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+/* Bottom Left */
+.img3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+/* Bottom Middle */
+.img4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* Hover Effect */
+.collage img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
+
+
+
+
+/* ========================= */
+/* CONTINUOUS FLOATING HEARTS */
+/* ========================= */
+
+.hearts-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.heart {
+    position: absolute;
+    bottom: -50px;
+    font-size: 20px;
+    animation: floatUp ease-in forwards;
+    opacity: 0.8;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) translateX(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50vh) translateX(20px) scale(1.2);
+    }
+    100% {
+        transform: translateY(-110vh) translateX(-20px) scale(1.4);
+        opacity: 0;
+    }
+}
