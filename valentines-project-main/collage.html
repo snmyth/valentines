@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Valentine ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lovers+Quarrel&display=swap');
+</style>
+
+<body class="collage-page">
+
+<h1 class="heading">Forever My Kuchuu puchuu ❤️</h1>
+
+<p class="quote">
+   From the moment you walked into my life idk from heaven literally in Agra, everything became brighter. You are my love, my happiness, my biggest blessing, and the most beautiful chapter of my story. I promise to love you more with every sunrise and cherish you more with every sunset my lil princess. So finally after all the long distance no label pretend bf situationship, will you be my valentine for the whole eternity ahead. C'mon love pls say yes aage jaake Amit Ji ko bhi toh mananay 😭💗😚 💖
+</p>
+
+<p class="quote">
+    I will be your cute lil goofball forever. 🤞🏻💖
+</p>
+
+<div class="collage">
+    <img src="./assets/photo1.jpeg" class="img1">
+    <img src="./assets/photo2.jpeg" class="img2">
+    <img src="./assets/photo3.jpeg" class="img3">
+    <img src="./assets/photo4.jpeg" class="img4">
+</div>
+
+<div class="hearts-container"></div>
+
+<script>
+const container = document.querySelector(".hearts-container");
+
+function createHeart() {
+    const heart = document.createElement("span");
+    heart.classList.add("heart");
+    heart.innerText = "💖";
+
+    // random horizontal position
+    heart.style.left = Math.random() * 100 + "vw";
+
+    // random size
+    heart.style.fontSize = (15 + Math.random() * 25) + "px";
+
+    // random speed
+    heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+    container.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 8000);
+}
+
+// continuous generation
+setInterval(createHeart, 300);
+</script>
+
+
+
+</body>
+</html>
